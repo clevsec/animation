@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the simple, no-commitment process of installing a security camera system with Cleveland Security Cameras. Contact us for a free estimate!">
+    <meta name="description" content="Discover the simple process of installing a security camera system with Cleveland Security Cameras.">
     <title>Cleveland Security Cameras: Simple Installation Process</title>
     <style>
         * {
@@ -29,34 +29,13 @@
         h1 {
             font-size: 3em;
             margin-bottom: 20px;
+            text-align: center;
+            padding: 40px 20px;
         }
         h2 {
             font-size: 2em;
             margin: 40px 0 20px;
             text-align: center;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
-            border-radius: 10px;
-            margin-bottom: 40px;
-        }
-        .contact-button {
-            background-color: #28a745;
-            color: #ffffff;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        .contact-button:hover {
-            background-color: #218838;
-            transform: scale(1.05);
         }
         .timeline {
             position: relative;
@@ -85,6 +64,7 @@
         }
         .timeline-step:hover {
             transform: translateY(-5px);
+            transition: transform 0.2s;
         }
         .timeline-step h3 {
             color: #28a745;
@@ -109,24 +89,19 @@
             height: 40px;
             margin-bottom: 10px;
         }
-        .contact-form {
-            background: #f5f5f5;
-            color: #333333;
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: 40px auto;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        .contact-section {
+            text-align: center;
+            margin: 40px 0;
         }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #28a745;
-            border-radius: 5px;
-            font-size: 1em;
+        .contact-link {
+            color: #28a745;
+            font-size: 1.2em;
+            text-decoration: none;
         }
-        .contact-form button {
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        .brochure-button {
             background-color: #28a745;
             color: #ffffff;
             border: none;
@@ -134,8 +109,11 @@
             font-size: 1em;
             border-radius: 5px;
             cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
         }
-        .contact-form button:hover {
+        .brochure-button:hover {
             background-color: #218838;
         }
         .testimonial-slider {
@@ -197,20 +175,17 @@
         @media (max-width: 600px) {
             h1 {
                 font-size: 2em;
+                padding: 20px 10px;
             }
-            .hero {
-                padding: 40px 10px;
-            }
-            .contact-button {
-                padding: 10px 20px;
-                font-size: 1em;
+            h2 {
+                font-size: 1.5em;
             }
             .timeline-step {
                 margin: 10px;
                 padding: 15px;
             }
-            .contact-form {
-                padding: 20px;
+            .contact-link {
+                font-size: 1em;
             }
             footer {
                 font-size: 0.9em;
@@ -221,8 +196,6 @@
 <body>
     <div class="hero">
         <h1>Cleveland Security Cameras: Simple Installation Process</h1>
-        <p>No commitment required! Get a free estimate today and secure your property with ease.</p>
-        <a href="#contact-form" class="contact-button" aria-label="Contact us for a free estimate">Contact Us</a>
     </div>
 
     <div class="container">
@@ -299,21 +272,15 @@
                 <p><strong>- Mark S., Akron</strong></p>
             </div>
             <div class="testimonial">
-                <p>"No pressure, just great service. Highly recommend their no-commitment approach!"</p>
+                <p>"No pressure, just great service. Highly recommend their approach!"</p>
                 <p><strong>- Sarah L., Lakewood</strong></p>
             </div>
         </div>
 
         <h2>Get Started Today</h2>
-        <div class="contact-form" id="contact-form">
-            <h3>Contact Us for a Free Estimate</h3>
-            <form id="contact-form-element" onsubmit="submitForm(event)">
-                <input type="text" id="name" placeholder="Your Name" required aria-label="Your Name">
-                <input type="email" id="email" placeholder="Your Email" required aria-label="Your Email">
-                <textarea id="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <a href="#" onclick="downloadBrochure()" class="contact-button" style="margin-top: 20px;" aria-label="Download our brochure">Download Brochure</a>
+        <div class="contact-section">
+            <p>Contact us at: <a href="mailto:contact@clevelandsecuritycameras.com" class="contact-link">contact@clevelandsecuritycameras.com</a></p>
+            <a href="#" onclick="downloadBrochure()" class="brochure-button" aria-label="Download our brochure">Download Brochure</a>
         </div>
     </div>
 
@@ -322,22 +289,8 @@
         <p><a href="https://x.com" target="_blank">X</a> | <a href="https://facebook.com" target="_blank">Facebook</a></p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-7fL1gDsxFSZ0dHmxYHZdcTUjPJted3rCdiTIitjehBZppKDOBnVq5NiW+NFSlXFRjTAV+bf7fU8EdokCSlTfL6g=="></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script>
-        // GSAP animations (fallback to CSS)
-        function animateTimeline() {
-            if (typeof gsap !== 'undefined') {
-                gsap.from('.timeline-step', {
-                    opacity: 0,
-                    x: -100,
-                    stagger: 0.3,
-                    duration: 0.8,
-                    ease: 'power2.out'
-                });
-            }
-        }
-
         // Toggle step details on click
         document.querySelectorAll('.timeline-step').forEach(step => {
             step.addEventListener('click', () => {
@@ -357,20 +310,6 @@
             currentTestimonial = (currentTestimonial + 1) % testimonials.length;
             showTestimonial(currentTestimonial);
         }, 5000);
-
-        // Form submission (simulated)
-        function submitForm(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            if (name && email && message) {
-                alert('Thank you, ' + name + '! Your message has been sent. We’ll respond soon.');
-                document.getElementById('contact-form-element').reset();
-            } else {
-                alert('Please fill in all fields.');
-            }
-        }
 
         // Download brochure as PDF
         function downloadBrochure() {
@@ -396,15 +335,6 @@
                 alert('PDF library not loaded. Please try again.');
             }
         }
-
-        // Initialize animations
-        window.addEventListener('load', () => {
-            animateTimeline();
-            if (typeof gsap !== 'undefined') {
-                gsap.from('.hero', { opacity: 0, y: -50, duration: 1 });
-                gsap.from('.why-item', { opacity: 0, scale: 0.8, stagger: 0.2, duration: 0.5, delay: 1 });
-            }
-        });
     </script>
 </body>
 </html>
