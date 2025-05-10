@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleveland Security Cameras: Simple Installation Process</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #1c2526;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #28a745;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .contact-button {
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .contact-button:hover {
+            background-color: #218838;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline-step {
+            background: #ffffff;
+            color: #1c2526;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .timeline-step.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .timeline-step h3 {
+            color: #28a745;
+            margin: 0 0 10px;
+        }
+        .timeline-step p {
+            margin: 0;
+            font-size: 1em;
+        }
+        .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            color: #28a745;
+            font-size: 1em;
+        }
+        footer a {
+            color: #28a745;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .contact-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+            .timeline-step {
+                margin: 10px;
+                padding: 15px;
+            }
+            footer {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cleveland Security Cameras: Simple Installation Process</h1>
+        <p>No commitment required! Get started with a free estimate today.</p>
+        <a href="mailto:contact@clevelandsecuritycameras.com" class="contact-button">Contact Us</a>
+
+        <div class="timeline">
+            <div class="timeline-step" data-step="1">
+                <div class="icon">📞</div>
+                <h3>1. Contact Us</h3>
+                <p>Reach out via email or phone to discuss your security needs. No obligation!</p>
+            </div>
+            <div class="timeline-step" data-step="2">
+                <div class="icon">📧</div>
+                <h3>2. Receive an Estimate</h3>
+                <p>We provide a free, detailed estimate tailored to your property.</p>
+            </div>
+            <div class="timeline-step" data-step="3">
+                <div class="icon">💳</div>
+                <h3>3. Make 50% Initial Payment</h3>
+                <p>Approve the estimate and pay 50% to proceed. Simple and transparent.</p>
+            </div>
+            <div class="timeline-step" data-step="4">
+                <div class="icon">📦</div>
+                <h3>4. Order Placed</h3>
+                <p>We order your customized security camera system.</p>
+            </div>
+            <div class="timeline-step" data-step="5">
+                <div class="icon">🔧</div>
+                <h3>5. Installation</h3>
+                <p>Our experts install your system efficiently and professionally.</p>
+            </div>
+            <div class="timeline-step" data-step="6">
+                <div class="icon">💸</div>
+                <h3>6. Final Payment Upon Completion</h3>
+                <p>Pay the remaining 50% only when you're satisfied with the installation.</p>
+            </div>
+            <div class="timeline-step" data-step="7">
+                <div class="icon">😊</div>
+                <h3>7. Happy with Support & 1-Year Warranty</h3>
+                <p>Enjoy peace of mind with ongoing support and a 1-year warranty.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us: <a href="mailto:contact@clevelandsecuritycameras.com">contact@clevelandsecuritycameras.com</a> | Phone: <a href="tel:+12163338245">216-333-8245</a></p>
+    </footer>
+
+    <script>
+        // Animate timeline steps on scroll or page load
+        function animateTimeline() {
+            const steps = document.querySelectorAll('.timeline-step');
+            steps.forEach((step, index) => {
+                setTimeout(() => {
+                    step.classList.add('visible');
+                }, index * 500); // Delay each step by 500ms
+            });
+        }
+
+        // Trigger animation when page loads
+        window.addEventListener('load', animateTimeline);
+
+        // Optional: Re-animate on scroll
+        window.addEventListener('scroll', () => {
+            const steps = document.querySelectorAll('.timeline-step');
+            steps.forEach(step => {
+                const rect = step.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8 && !step.classList.contains('visible')) {
+                    step.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
